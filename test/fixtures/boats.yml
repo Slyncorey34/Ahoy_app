@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  location: 
+  user_id: 
+  container: 1
+
+two:
+  name: 
+  location: 
+  user_id: 
+  container: 1
