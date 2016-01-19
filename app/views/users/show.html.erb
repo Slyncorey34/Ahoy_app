@@ -1,0 +1,28 @@
+<h4><%=@user.email%> is logged in</h4>
+
+<h2>Launch a new Boat</h2>
+	<%=form_for(@boats) do |f|%>
+	<%=f.label :boat_name %>
+	<%=f.text_field :name%>
+	<br>
+	<%=f.label :current_location%>
+	<%=f.text_field :location%>
+	<%=f.label :Number_of_containers%>
+	<%=f.text_field :container%> 
+	<%=f.label :job%>
+	<br>
+	<br>
+	<!-- ADD A JOB TO THIS SHIPMENT, LINKS TO JOB NEW ERB, WHICH EMBED RUBYS ALL THE BOAT INFORMATION, THEN YOU ADD A FORM WITH JOB FIELDS. CLICK SUBMIT AND GO TO USER PATH -->
+	<%=f.submit "Create Shipment"%>
+	<%end%>
+	
+<h4><%=link_to 'See All Shipments', boats_path%></h4>
+
+<h4>Your Shipments</h4>
+<% @user.boats.each do |b| %>
+<%= link_to b.name, boat_path(b)%>
+<br>
+<%end%>
+
+
+<!-- <li>Update your Account</li> -->
