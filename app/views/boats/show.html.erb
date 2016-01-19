@@ -1,0 +1,10 @@
+<h2><%=@boat.name%> Log</h2>
+	<%= @boat.location %>
+	<%=@boat.container%>
+	<%=@boat.user.email%>
+	<br>
+	<%=link_to 'Edit', edit_boat_path %>
+	<br>
+	<%=link_to 'Delete', method: :delete%>
+
+<%=link_to 'Add cargo to this boat', new_boat_job_path(@boat)%>

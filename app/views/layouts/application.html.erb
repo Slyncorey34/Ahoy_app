@@ -5,10 +5,28 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<% if flash[:alert] %>
+	    <div class="flash notice">
+	      <%= flash[:alert] %>
+	    </div>
+    <% end %>
+	<div id="logo">
+	<h2>Ahoy</h2>
+</div>
+<div class="navbar">
+	<ul>
+		<li>About</li>
+		<li>Contact</li>
+		<li>Logout</li>
+	</ul>
+</div>
 
 <%= yield %>
+
+
 
 </body>
 </html>

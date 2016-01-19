@@ -1,0 +1,26 @@
+<h1>Jobs</h1>
+<p>Tell us about your shipment:/<p>
+	<!-- Where are you shipping from?
+	Where are you shipping to?
+	Name this job
+	Specify the cost of the cargo (<$1k)
+	Optional: Add a note ("handle with care, do not stack, etc") -->
+	
+
+<h2>Add cargo to this Boat</h2>
+	<%=form_for [@boat, @job] do |f|%>
+	<%=f.label :job_name %>
+	<%=f.text_field :name%>
+	<br>
+	<%=f.label :Ship_From%>
+	<%=f.text_field :origin%>
+	<%=f.label :Ship_To%>
+	<%=f.text_field :destination%>
+	<%=f.label :Value_of_cargo%> 
+	<%=f.text_field :cost%>
+	<%=f.label :description%>
+	<%=f.text_field :note%>
+	<br>
+	<br>
+	<%=f.submit "Create Job"%>
+	<%end%>

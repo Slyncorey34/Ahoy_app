@@ -1,25 +1,21 @@
 Rails.application.routes.draw do
-  get 'boats/index'
 
-  get 'boats/new'
 
-  get 'boats/create'
 
-  get 'boats/destroy'
-
-  get 'user/index'
-
-  get 'user/new'
-
-  get 'user/create'
-
-  get 'user/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'home#index'
+
+  get '/login', to: 'sessions#new'
+  
+  post '/login', to: 'sessions#create'
+  
+get '/logout', to: 'sessions#destroy'
+
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -28,7 +24,10 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+    resources :users
+    resources :boats do
+      resources :jobs
+  end
 
   # Example resource route with options:
   #   resources :products do

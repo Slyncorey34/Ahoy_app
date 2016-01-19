@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+body {
+	
+}
+#logo {
+	font-family: 'Lobster', cursive;
+}
+.navbar{
+	float: right;
+	text-decoration: none;
+	
+}
+
+.forms {
+	width: 250px;
+	height: 300px;
+	/*border: 1px solid black;*/
+	border-radius: 20px;
+	background-color: white;
+	color: grey;
+	padding-left: 2%;
+	padding-top: 2%;
+	margin: 5% 25% 5%;
+}
