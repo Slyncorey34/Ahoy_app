@@ -1,5 +1,5 @@
 <div id="table-two">
-		<h3>Job Log for <%=@boat.name%></h3>
+		<h3><%=@boat.name%>'s Job Log</h3>
 	<table>
 		<thead>
 		<tr>
@@ -14,7 +14,10 @@
 		<% @jobs.each do |job| %>
 		<tr>
 			<td><%=job.name%></td>
-			<td><%=job.cost%></td>	
+			<td><%=job.origin%></td>
+			<td><%=job.destination%></td>
+			<td><%=job.cost%></td>
+			<td><%=job.note%></td>	
 			<%end%>
 	</tr>
 	</tbody>

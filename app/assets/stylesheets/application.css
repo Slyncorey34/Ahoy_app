@@ -46,10 +46,13 @@ h1 {
 	padding-top: 2%;
 	margin: 5% 25% 5%;
 }
-#table-boat {
-	border: 1px solid grey;
-	width: 65%;
-	height: 150px;
+/*.tables {
+	border: 1px solid green;
+}*/
+.table {
+	border: 1px solid #e6f1f6;
+	width: 45%;
+	height: auto;
 	margin: 50px auto;
 	border-radius: 5px;
 	background-color: white;
@@ -60,13 +63,20 @@ h1 {
      border-radius: 15px;
 
 }
-#table-two {
-	border: 1px solid grey;
+#table-one table {
+	border: 1px solid #e6f1f6;
+	background-color: red;
 }
-#table-boat h1 {
+#table-one h1 {
 	margin-left: 2%;
 	margin-top: 1%;
+}tab
+#table-two table{
+	border-radius: 15px;
+	height: auto;
 }
+
+
 table {
 	width: 85%;
 	border-collapse: separate;
@@ -93,7 +103,7 @@ td {
 thead  {
 	color: #2BABE2;
 }
-thead tr {
+#table-two thead tr {
 	background-color: #E6F1F6;
 }
 
