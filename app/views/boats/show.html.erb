@@ -1,10 +1,51 @@
-<h2><%=@boat.name%> Log</h2>
-	<%= @boat.location %>
-	<%=@boat.container%>
-	<%=@boat.user.email%>
-	<br>
+
+	<div id="table-boat">
+		<h1><%=@boat.name%> Log</h1>
+		<table>
+		<thead>
+		<tr>
+			<th>Location</th>
+			<th>No. Containers</th>
+			<th>Captain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td><%= @boat.location %></td>
+	<td><%=@boat.container%></td>
+	<td><%=@boat.user.email%></td>
+	</tr>
+	</tbody>
+</table>
+	<!-- </div>
+	<div class="table">
+	<table>
+		<thead>
+		<tr>
+			<th>Location</th>
+			<th>No. Containers</th>
+			<th>Captain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr> -->
+		<!-- <td><%#= @boat.location %></td> -->
+	<!-- <td><%#=@boat.container%></td> -->
+	<!-- <td><%#=@boat.user.email%></td> -->
+<!-- 	</tr> -->
+<!-- </table> -->
+	<%= render 'jobs/show' %>
+<!-- 
+	</tr>
+	</tbody>
+</table>
+</div> -->
+<br>
 	<%=link_to 'Edit', edit_boat_path %>
 	<br>
 	<%=link_to 'Delete', method: :delete%>
-
+	<br>
+<!-- Maybe the render will include this code on line 10 -->
 <%=link_to 'Add cargo to this boat', new_boat_job_path(@boat)%>
+
+<!-- insert the 'render' code here, pulled from an index or show jobs file and display the job table for this particular boat -->

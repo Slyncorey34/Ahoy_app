@@ -14,15 +14,25 @@
  *= require_self
  */
 body {
-	
+	font-family: Arial, sans-serif;
+	color: grey;
 }
+h1 {
+	color: #F05819;
+	}
+
 #logo {
 	font-family: 'Lobster', cursive;
+	color: #2BABE2;
+	
+	width: 7%;
+	margin-top: -2%;
+
 }
 .navbar{
 	float: right;
 	text-decoration: none;
-	
+	background-color: cornsilk;
 }
 
 .forms {
@@ -36,3 +46,56 @@ body {
 	padding-top: 2%;
 	margin: 5% 25% 5%;
 }
+#table-boat {
+	border: 1px solid grey;
+	width: 65%;
+	height: 150px;
+	margin: 50px auto;
+	border-radius: 5px;
+	background-color: white;
+	 box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+     border-radius: 15px;
+
+}
+#table-two {
+	border: 1px solid grey;
+}
+#table-boat h1 {
+	margin-left: 2%;
+	margin-top: 1%;
+}
+table {
+	width: 85%;
+	border-collapse: separate;
+	background: lightgrey;
+	margin: auto;
+	border: 1px solid grey;
+/*	border-bottom: 2px solid slategrey;*/
+	/* box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+     border-radius: 5px;*/
+}
+tr {
+	background: cornsilk;
+}
+
+td {
+	color: slategrey;
+	height: 40px;
+	width: 20px;
+}
+
+thead  {
+	color: #2BABE2;
+}
+thead tr {
+	background-color: #E6F1F6;
+}
+
+
+
