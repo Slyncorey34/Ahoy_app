@@ -28,12 +28,12 @@
 	</div>
 		<%= render 'jobs/show' %>
 </div>
-<br>
+	<br>
 	<%=link_to 'Edit', edit_boat_path %>
 	<br>
 	<%=link_to 'Delete', method: :delete%>
 	<br>
-<!-- Maybe the render will include this code on line 10 -->
+
 <%=link_to 'Add cargo to this boat', new_boat_job_path(@boat)%>
 
 

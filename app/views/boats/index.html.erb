@@ -1,10 +1,7 @@
 <h2>All Boats</h2>
-
-<% @boats.each do |b| %>
-<%=b.name%>
-<%=b.location%>
-<%=b.container%>
-<%=b.user.email%>
+	<% @boats.each do |boat| %>
+<%=link_to boat.name, boat_path(boat)%>
+<br>
+<br>
 <%end%>
 
-<!-- show the job(s) of this boat -->

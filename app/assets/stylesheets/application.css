@@ -1,40 +1,90 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-body {
+html, body {
 	font-family: Arial, sans-serif;
 	color: grey;
+	background-repeat: no-repeat;
+	height: 100%;
 }
+
 h1 {
 	color: #F05819;
-	}
+}
+#spec_logo {
+/*	margin-top: 40px;
+	margin-left: 45%;*/
+	width: 120px;
+
+	margin-left: 45%;
+
+}
+
+#spec_logo h1{
+	font-family: 'Lobster', cursive;
+	color: #2BABE2;
+	font-size: 48px;
+}
 
 #logo {
 	font-family: 'Lobster', cursive;
 	color: #2BABE2;
-	
 	width: 7%;
 	margin-top: -2%;
-
+	background-color: lightgrey;
 }
+.body_image{
+	width: 200px;
+	float: left;
+	clear: both;
+	margin-left: 8%;
+	margin-top: 5%;	
+}
+.signup_btn {
+	background-color: #f05819;
+	width: 80px;
+	height: 25px;
+	border-radius: 3px;
+	font-weight: bolder;
+}
+.signup_btn a {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin-left: 5%;
+}
+
+/*HOVER LINK STYLE?*/
+
+.login_form {
+	/*border: 1px solid red;*/
+	height: 80px;
+	width: 160px;
+	margin: 20px auto;
+}
+.login_form input{
+	background-color: #fff;
+	height: 25px;
+	width: 180px;
+	font-size: 14px;
+	border-radius: 2px;
+}
+.login_btn input{
+	background-color: #00cc8e;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 7%;
+	height: auto;
+	box-shadow: none;
+}
+
 .navbar{
 	float: right;
 	text-decoration: none;
 	background-color: cornsilk;
 }
-
+.footer {
+	float: right;
+	text-decoration: none;
+	background-color: pink;
+}
 .forms {
 	width: 250px;
 	height: 300px;
@@ -46,52 +96,19 @@ h1 {
 	padding-top: 2%;
 	margin: 5% 25% 5%;
 }
-/*.tables {
-	border: 1px solid green;
-}*/
+
 .table {
 	border: 1px solid #e6f1f6;
-	width: 45%;
+	width: 70%;
 	height: auto;
 	margin: 50px auto;
 	border-radius: 5px;
 	background-color: white;
-	 box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
-     0px 10px 20px rgba(0,0,0,0.05),
-     0px 20px 20px rgba(0,0,0,0.05),
-     0px 30px 20px rgba(0,0,0,0.05);
-     border-radius: 15px;
-
-}
-#table-one table {
-	border: 1px solid #e6f1f6;
-	background-color: red;
-}
-#table-one h1 {
-	margin-left: 2%;
-	margin-top: 1%;
-}tab
-#table-two table{
-	border-radius: 15px;
-	height: auto;
-}
-
-
-table {
-	width: 85%;
-	border-collapse: separate;
-	background: lightgrey;
-	margin: auto;
-	border: 1px solid grey;
-/*	border-bottom: 2px solid slategrey;*/
-	/* box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
-     0px 10px 20px rgba(0,0,0,0.05),
-     0px 20px 20px rgba(0,0,0,0.05),
-     0px 30px 20px rgba(0,0,0,0.05);
-     border-radius: 5px;*/
-}
-tr {
-	background: cornsilk;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+    border-radius: 8px;
 }
 
 td {
@@ -103,9 +120,61 @@ td {
 thead  {
 	color: #2BABE2;
 }
-#table-two thead tr {
-	background-color: #E6F1F6;
+
+#table-one table {
+	width: 85%;
+	margin: auto;
 }
 
+#table-one td {
+	text-align: center;
+	font-size: 14px;
+}
+#table-one h1 {
+	margin-left: 2%;
+	margin-top: 1%;
+}
 
+#table-two table {
+	height: auto;
+	width: 100%;
+}
+
+#table-two tr {
+	background: #2BABE1;
+	text-align: center;
+	color: white;
+}
+#table-two td{
+	color: white;
+}
+#table-two h3 {
+	color: #2DE0AD;
+	margin-left: 2%;
+}
+
+#table-two thead tr {
+	background-color: #00374F;
+	color: white;
+}
+*{
+	margin: 0;
+}
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -120px;
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.footer, .page-wrap:after {
+	height: 120px;
+	width: 100%
+}
+.footer {
+	background-color: #f05819;
+	color: white;
+	font-size: 14px;
+}
 

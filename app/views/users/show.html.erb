@@ -1,5 +1,7 @@
+<!-- add user is logged in text to the render/application.layout.html.erb file -->
 <h4><%=@user.email%> is logged in</h4>
 
+<div id="new_boat">
 <h2>Launch a new Boat</h2>
 	<%=form_for(@boats) do |f|%>
 	<%=f.label :boat_name %>
@@ -13,9 +15,9 @@
 	<br>
 	<br>
 	<!-- ADD A JOB TO THIS SHIPMENT, LINKS TO JOB NEW ERB, WHICH EMBED RUBYS ALL THE BOAT INFORMATION, THEN YOU ADD A FORM WITH JOB FIELDS. CLICK SUBMIT AND GO TO USER PATH -->
-	<%=f.submit "Create Shipment"%>
+	<%=f.submit "Launch Boat"%>
 	<%end%>
-	
+</div>
 <h4><%=link_to 'See All Shipments', boats_path%></h4>
 
 <h4>Your Shipments</h4>

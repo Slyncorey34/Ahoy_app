@@ -1,12 +1,21 @@
-<!-- render<h2>Login</h2> -->
-<div class="form">
-	<%= form_tag login_path do%>
-		<%= label_tag("Email") %>
-		<%= text_field_tag(:email) %>
-		<%= label_tag ("Password") %>
-		<%= password_field_tag(:password) %> 
-		<%=submit_tag "Login" %>
-<%end%>
-</div>
+<%= render 'home/index' %>
 
-<h2> Or</h2><%= link_to 'Sign Up', new_user_path%>
+<div class="login_form">
+	<%= form_tag login_path do%>
+		<%#= label_tag("Email") %>
+		<%= text_field_tag(:email, nil, placeholder: 'email') %>
+		<br>
+
+		<%#= label_tag ("Password") %>
+		<%= password_field_tag(:password, nil, placeholder: 'password') %> 
+		
+	
+		<div class="login_btn">
+			<%=submit_tag "Login" %>
+		</div>
+		</div>
+	<%end%>
+
+
+
+
