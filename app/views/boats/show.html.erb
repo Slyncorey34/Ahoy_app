@@ -1,10 +1,47 @@
-<h2><%=@boat.name%> Log</h2>
-	<%= @boat.location %>
-	<%=@boat.container%>
-	<%=@boat.user.email%>
+<div class ="table">
+	<div id ="table-one">
+			<!-- <h1><%=@boat.name%></h1> -->
+			<div id="table-one-nav">
+				<h1><%=@boat.name%></h1>
+				<ul>
+					<li>Decomission</li>
+					<li>Edit</li>
+				</ul>	
+			</div>
+		<table>
+			<thead>
+				<body>
+					<tr>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td><%= @boat.location %></td>
+					</tr>
+					<tr>
+						<th>No. Containers</th>
+					</tr>
+					<tr>
+						<td><%=@boat.container%></td>
+					</tr>
+					<tr>
+						<th>Captain</th>
+					</tr>
+					<tr>
+						<td><%=@boat.user.email%></td>
+					</tr>
+				</tbody>
+			</thead>	
+		</table>
+	</div>
+			<%= render 'jobs/show' %>
+</div>
+<%= image_tag @boat.avatar.url(:thumb) %>
 	<br>
 	<%=link_to 'Edit', edit_boat_path %>
 	<br>
 	<%=link_to 'Delete', method: :delete%>
+	<br>
 
 <%=link_to 'Add cargo to this boat', new_boat_job_path(@boat)%>
+
+

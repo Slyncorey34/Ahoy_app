@@ -5,28 +5,43 @@ class BoatsController < ApplicationController
 
   def show
   	@boat = Boat.find(params[:id])
+    @jobs = Job.where(boat_id: params[:id])
   end
-  
-  def edit
-  	@boat = Boat.find(params[:id])
-  end
-  
+
   def new
   	@boat = Boat.new
+    @user= current_user
   end
 
   def create
-	  	@boat = current_user.boats.build(boat_params)
-	  	if @boat.save
-	  		redirect_to user_path(current_user)
-	  	else
-	  		flash[:alert] = "Whoops. Make sure all fields are filled."
-	  	end
+    @boat = current_user.boats.build(boat_params)
+      if @boat.save
+        redirect_to user_path(current_user)
+      else
+        flash[:alert] = "Whoops. Make sure all fields are filled."
+      end
+  end
+# 	  @boat = current_user.boats.build(boat_params)
+# 	 	if @boat.save
+#     redirect_to user_path(current_user)
+#   else
+#     redirect_to new_boat_path
+#   end
+# end
+
+   def edit
+    @boat = Boat.find(params[:id])
   end
 
   def update
-  	
+    @boat = Boat.find(params[:id])
+    if @boat.update_attributes(boat_params)
+      redirect_to boat_path(@boat)
+    else
+      render edit_boat_path(@boat) 
+    end	
   end
+
   def destroy
   	@user = User.find(params[:id])
   	@boat= Boat.find(params[:id])
@@ -41,8 +56,6 @@ class BoatsController < ApplicationController
 
   private
   	def boat_params
-  		params.require(:boat).permit(:name, :location, :container)
+  		params.require(:boat).permit(:name, :location, :container, :avatar)
   	end
 end
-
-# boat params are: name, location, #container

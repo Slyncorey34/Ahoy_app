@@ -1,0 +1,20 @@
+<div id="new_boat">
+		<h4>Launch a new Boat</h4>
+		<%=form_for @boat, url: boats_path, html: { multipart: true } do |f|%>
+		<%=f.label :boat_name %>
+		<%=f.text_field :name%>
+		<br>
+		<%=f.label :current_location%>
+		<%=f.text_field :location%>
+		<br>
+		<%=f.label :Number_of_containers%>
+		<%=f.text_field :container%> 
+		<br>
+		<br>
+		<br>
+		<%= f.file_field :avatar %>
+		<br>
+	
+		<%=f.submit "Launch this Ship"%>
+		<%end%>
+	</div>

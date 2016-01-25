@@ -17,9 +17,8 @@ class JobsController < ApplicationController
   	@job = @boat.jobs.build(job_params)
   	@job.user = current_user
   	@job.save
-  	redirect_to boats_path
+  	redirect_to boat_path(@boat)
   end
-
 
 private
 	def job_params

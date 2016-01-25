@@ -7,25 +7,29 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-	<body background="/assets/waves.jpg">
+	<div class="page-wrap">
 	<% if flash[:alert] %>
 	    <div class="flash notice">
 	      <%= flash[:alert] %>
 	    </div>
     <% end %>
-    	<div class="nav_bar">
-		<ul>
-			<li>
-				<div id="logo"><h2>Ahoy</h2></div>
-			</li>
-			<li>
-				<!-- <h4><%#= @user.email%> is logged in</h4> -->
-			</li>
-		</ul>
-	</div>
-	<%=yield %>
+    	
 
+		<div id="spec_logo">
+			<h1>Ahoy!</h1>
+		</div>
+
+		<div class="body_image">
+			<img src="/assets/octopus_green.jpg">
+		</div>
+
+		<%=yield %>
+		<br>
+		<div class="signup_btn">
+	    	<p><%= link_to 'Sign Up', new_user_path%><p>
+		</div> 
+		
+	</div>
 </body>
 </html>

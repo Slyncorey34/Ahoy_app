@@ -1,0 +1,25 @@
+<!--Edit the boat's information on this index-->
+<div class="new_item">
+	<div id="edit_boat">
+	<h2>Update the Boat</h2>
+		<%=form_for @boat do |f|%>	
+		<%=f.label :boat_name %>
+		<%=f.text_field :name%>
+		<br>
+		<%=f.label :current_location%>
+		<%=f.text_field :location%>
+		<br>
+		<%=f.label :Number_of_containers%>
+		<%=f.text_field :container%> 
+		<br>
+		<br>
+		<br>
+		<%= f.file_field :avatar %>
+	</div>
+	<br>
+		<!-- <div id="new_item_btn"> -->
+		<%=f.submit "Update"%> 
+		<!-- add code to Boat edit/update controller. User is redirected to the boat show path, and will see their changes -->
+	<!-- 	</div> -->
+		<%end%>
+	</div>

@@ -1,38 +1,272 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-body {
-	
-}
-#logo {
-	font-family: 'Lobster', cursive;
-}
-.navbar{
-	float: right;
-	text-decoration: none;
-	
+html, body {
+	font-family: Arial, sans-serif;
+	color: grey;
+	background-size: 60%;
+	height: 100%;
+
 }
 
-.forms {
+h1 {
+	color: #F05819;
+}
+.nav_bar {
+	background-color: #fff;
+	height: 8%;
+	padding: 0;
+	margin: 0;
+}
+.nav_bar li {
+	display: inline;
+	margin:0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.flash_notice {
+	color:  #f05819;
+	background-color: #fff;
+	text-transform: capitalize;
+}
+#spec_logo {
+	margin-top: 40px;
+	/*margin-left: 45%;*/
+	width: 120px;
+	margin-left: 45%;
+}
+
+#spec_logo h1{
+	font-family: 'Lobster', cursive;
+	color: #2BABE2;
+	font-size: 48px;
+}
+
+#logo {
+	font-family: 'Lobster', cursive;
+	color: #2BABE2;
+	width: 7%;
+	margin-left: 1%;
+}
+.body_image{
+	width: 200px;
+	float: left;
+	margin-left: 8%;
+	margin-top: 10%;
+}
+
+.signup_btn {
+	background-color: #2BABE2;
+	width: 80px;
+	height: 25px;
+	border-radius: 3px;
+	margin-left: 45%;
+}
+
+.signup_btn a {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin-left: 10%;	
+}
+
+.login_form {
+	width: 200px;
+	margin: 5px auto;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+}
+.login_form input{
+	border: 1px solid #e6f1f6;
+	height: 25px;
+	width: 200px;
+	font-size: 14px;
+	border-radius: 2px;
+}
+.login_btn input{
+	background-color: #00cc8e;
+	color: #fff;
+	font-size: 20px;
+	height: auto;
+	width: 180px;
+	margin: 20px;
+	margin-left: 12%;
+	border-radius: 5px;	
+
+}
+.login_btn h4 {
+	display: inline;
+	margin-left: 15%;
+}
+#profile {
+	/*border: 1px solid red;
+	border: 1px solid blue;*/
+	width: 250px;
+	height: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
+	float: right;
+	color: grey;
+}
+#new_boat {
+	border: 1px solid blue;
+	width: 250px;
+	height: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
+	color: grey;
+}
+/*.forms {
 	width: 250px;
 	height: 300px;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	border-radius: 20px;
 	background-color: white;
 	color: grey;
 	padding-left: 2%;
 	padding-top: 2%;
 	margin: 5% 25% 5%;
+}*/
+
+.table {
+	border: 1px solid #e6f1f6;
+	width: 60%;
+	height: auto;
+	margin: 50px auto;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+    border-radius: 8px;
 }
+
+td {
+	color: slategrey;
+	height: 40px;
+	width: 20px;
+}
+
+thead  {
+	color: #2BABE2;
+	text-align: left;
+}
+
+#table-one-nav ul{
+	list-style-type: none;
+    /*margin: 0;*/
+    padding: 0;
+    overflow: hidden;
+    
+ 
+}
+
+#table-one-nav li{
+	/*list-style: none;
+	display: inline;*/
+	float: right;
+	/*padding-left: 2%;*/
+}
+
+#table-one table {
+	width: 60%;
+	margin-left: 2%;
+}
+
+#table-one td {
+	height: 20px;
+	font-size: 14px;
+}
+
+#table-one h1 {
+	margin-left: 2%;
+	margin-top: 1%;
+	width: 130px;
+}
+
+#table-two table {
+	height: auto;
+	width: 100%;
+}
+
+#table-two tr {
+	background: #2BABE1;
+	text-align: center;
+	color: white;
+}
+#table-two td{
+	color: white;
+}
+#table-two h3 {
+	color: #2DE0AD;
+	margin-left: 2%;
+}
+
+#table-two thead tr {
+	background-color: #00374F;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+* {
+	margin: 0;
+}
+/*.wrapper {
+	width: 400px;
+	height: 300px;
+	margin: 5px auto;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+
+}*/
+.wrapper {
+	width: auto;
+	height: auto;
+	border: solid 1px red;
+}
+/*.new_item input {
+	border: 2px solid #e6f1f6;
+	height: 25px;
+	width: 200px;
+	font-size: 14px;
+	border-radius: 2px;
+}*/
+.wrapper_btn {
+	background-color: red;
+	color: #fff;
+	font-size: 20px;
+	height: auto;
+	width: 180px;
+	margin: 20px;
+	margin-left: 15%;
+	border-radius: 5px;	
+}
+
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -40px;
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.footer, .page-wrap:after {
+	height: 40px;
+	width: 100%
+}
+.footer {
+	background-color: #f05819;
+	color: white;
+	font-size: 14px;
+}
+
