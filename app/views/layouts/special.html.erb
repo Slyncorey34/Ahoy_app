@@ -14,9 +14,7 @@
 	      <%= flash[:alert] %>
 	    </div>
     <% end %>
-    	<div class="signup_btn">
-    		<p><%= link_to 'Sign Up', new_user_path%><p>
-		</div> 
+    	
 
 		<div id="spec_logo">
 			<h1>Ahoy!</h1>
@@ -26,15 +24,12 @@
 			<img src="/assets/octopus_green.jpg">
 		</div>
 
-	<%=yield %>
-</div>
-		<div class="footer">
-		<ul>
-			<li>a</li>
-			<li>bb</li>
-			<li>ccc</li>
-		</ul>
+		<%=yield %>
+		<br>
+		<div class="signup_btn">
+	    	<p><%= link_to 'Sign Up', new_user_path%><p>
+		</div> 
+		
 	</div>
-	
 </body>
 </html>

@@ -1,6 +1,13 @@
 <div class ="table">
 	<div id ="table-one">
-	<h1><%=@boat.name%></h1>
+			<!-- <h1><%=@boat.name%></h1> -->
+			<div id="table-one-nav">
+				<h1><%=@boat.name%></h1>
+				<ul>
+					<li>Decomission</li>
+					<li>Edit</li>
+				</ul>	
+			</div>
 		<table>
 			<thead>
 				<body>
@@ -26,8 +33,9 @@
 			</thead>	
 		</table>
 	</div>
-		<%= render 'jobs/show' %>
+			<%= render 'jobs/show' %>
 </div>
+<%= image_tag @boat.avatar.url(:thumb) %>
 	<br>
 	<%=link_to 'Edit', edit_boat_path %>
 	<br>

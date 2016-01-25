@@ -9,19 +9,23 @@
 </head>
 
 <body>
-	
+	<body background="/assets/waves.jpg">
 	<% if flash[:alert] %>
 	    <div class="flash notice">
 	      <%= flash[:alert] %>
 	    </div>
     <% end %>
-	<div id="logo">
-	<h2>Ahoy</h2>
-</div>
-
-
-<%=yield %>
-
+    	<div class="nav_bar">
+		<ul>
+			<li>
+				<div id="logo"><h2>Ahoy</h2></div>
+			</li>
+			<li>
+				<!-- <h4><%#= @user.email%> is logged in</h4> -->
+			</li>
+		</ul>
+	</div>
+	<%=yield %>
 
 </body>
 </html>

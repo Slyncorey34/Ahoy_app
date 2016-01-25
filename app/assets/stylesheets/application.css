@@ -1,20 +1,39 @@
 html, body {
 	font-family: Arial, sans-serif;
 	color: grey;
-	background-repeat: no-repeat;
+	background-size: 60%;
 	height: 100%;
+
 }
 
 h1 {
 	color: #F05819;
 }
+.nav_bar {
+	background-color: #fff;
+	height: 8%;
+	padding: 0;
+	margin: 0;
+}
+.nav_bar li {
+	display: inline;
+	margin:0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.flash_notice {
+	color:  #f05819;
+	background-color: #fff;
+	text-transform: capitalize;
+}
 #spec_logo {
-/*	margin-top: 40px;
-	margin-left: 45%;*/
+	margin-top: 40px;
+	/*margin-left: 45%;*/
 	width: 120px;
-
 	margin-left: 45%;
-
 }
 
 #spec_logo h1{
@@ -27,42 +46,42 @@ h1 {
 	font-family: 'Lobster', cursive;
 	color: #2BABE2;
 	width: 7%;
-	margin-top: -2%;
-	background-color: lightgrey;
+	margin-left: 1%;
 }
 .body_image{
 	width: 200px;
 	float: left;
-	clear: both;
 	margin-left: 8%;
-	margin-top: 5%;	
+	margin-top: 10%;
 }
+
 .signup_btn {
-	background-color: #f05819;
+	background-color: #2BABE2;
 	width: 80px;
 	height: 25px;
 	border-radius: 3px;
-	font-weight: bolder;
+	margin-left: 45%;
 }
+
 .signup_btn a {
 	text-decoration: none;
 	text-align: center;
 	color: white;
-	margin-left: 5%;
+	margin-left: 10%;	
 }
-
-/*HOVER LINK STYLE?*/
 
 .login_form {
-	/*border: 1px solid red;*/
-	height: 80px;
-	width: 160px;
-	margin: 20px auto;
+	width: 200px;
+	margin: 5px auto;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
 }
 .login_form input{
-	background-color: #fff;
+	border: 1px solid #e6f1f6;
 	height: 25px;
-	width: 180px;
+	width: 200px;
 	font-size: 14px;
 	border-radius: 2px;
 }
@@ -70,36 +89,52 @@ h1 {
 	background-color: #00cc8e;
 	color: #fff;
 	font-size: 20px;
-	margin-top: 7%;
 	height: auto;
-	box-shadow: none;
-}
+	width: 180px;
+	margin: 20px;
+	margin-left: 12%;
+	border-radius: 5px;	
 
-.navbar{
-	float: right;
-	text-decoration: none;
-	background-color: cornsilk;
 }
-.footer {
-	float: right;
-	text-decoration: none;
-	background-color: pink;
+.login_btn h4 {
+	display: inline;
+	margin-left: 15%;
 }
-.forms {
+#profile {
+	/*border: 1px solid red;
+	border: 1px solid blue;*/
+	width: 250px;
+	height: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
+	float: right;
+	color: grey;
+}
+#new_boat {
+	border: 1px solid blue;
+	width: 250px;
+	height: 280px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
+	color: grey;
+}
+/*.forms {
 	width: 250px;
 	height: 300px;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	border-radius: 20px;
 	background-color: white;
 	color: grey;
 	padding-left: 2%;
 	padding-top: 2%;
 	margin: 5% 25% 5%;
-}
+}*/
 
 .table {
 	border: 1px solid #e6f1f6;
-	width: 70%;
+	width: 60%;
 	height: auto;
 	margin: 50px auto;
 	border-radius: 5px;
@@ -119,20 +154,39 @@ td {
 
 thead  {
 	color: #2BABE2;
+	text-align: left;
+}
+
+#table-one-nav ul{
+	list-style-type: none;
+    /*margin: 0;*/
+    padding: 0;
+    overflow: hidden;
+    
+ 
+}
+
+#table-one-nav li{
+	/*list-style: none;
+	display: inline;*/
+	float: right;
+	/*padding-left: 2%;*/
 }
 
 #table-one table {
-	width: 85%;
-	margin: auto;
+	width: 60%;
+	margin-left: 2%;
 }
 
 #table-one td {
-	text-align: center;
+	height: 20px;
 	font-size: 14px;
 }
+
 #table-one h1 {
 	margin-left: 2%;
 	margin-top: 1%;
+	width: 130px;
 }
 
 #table-two table {
@@ -156,20 +210,58 @@ thead  {
 #table-two thead tr {
 	background-color: #00374F;
 	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
 }
-*{
+* {
 	margin: 0;
 }
+/*.wrapper {
+	width: 400px;
+	height: 300px;
+	margin: 5px auto;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+
+}*/
+.wrapper {
+	width: auto;
+	height: auto;
+	border: solid 1px red;
+}
+/*.new_item input {
+	border: 2px solid #e6f1f6;
+	height: 25px;
+	width: 200px;
+	font-size: 14px;
+	border-radius: 2px;
+}*/
+.wrapper_btn {
+	background-color: red;
+	color: #fff;
+	font-size: 20px;
+	height: auto;
+	width: 180px;
+	margin: 20px;
+	margin-left: 15%;
+	border-radius: 5px;	
+}
+
+
 .page-wrap {
 	min-height: 100%;
-	margin-bottom: -120px;
+	margin-bottom: -40px;
 }
 .page-wrap:after {
 	content: "";
 	display: block;
 }
 .footer, .page-wrap:after {
-	height: 120px;
+	height: 40px;
 	width: 100%
 }
 .footer {
