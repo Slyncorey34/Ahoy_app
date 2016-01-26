@@ -1,6 +1,6 @@
 <div id="new_boat">
 		<h4>Launch a new Boat</h4>
-		<%=form_for @boat, url: boats_path, html: { multipart: true } do |f|%>
+		<%=form_for @boat, html: { multipart: true } do |f|%>
 		<%=f.label :boat_name %>
 		<%=f.text_field :name%>
 		<br>
