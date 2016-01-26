@@ -1,6 +1,6 @@
 class Boat < ActiveRecord::Base
   validates :name, uniqueness: true, on: :create
-  # validates :location, inclusion: {in: %w('Halifax', 'Havana', 'Jakarta', 'Los Angeles', 'Split')}
+  validates_inclusion_of :location, :in => %w( Halifax Havana Jakarta Los Angeles Split)
   # validates presence of array of locales [Jakarta, Havana, Split, Los Angeles, Halifax]
   belongs_to :user
   has_many :jobs, dependent: :destroy
